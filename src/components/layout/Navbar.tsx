@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 
@@ -16,13 +17,15 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-ink-200)] bg-white/95 backdrop-blur-md">
       <Container className="flex h-20 items-center justify-between">
-        <Link href="/" className="group inline-flex items-center gap-3" aria-label="Codecladders LLC home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[linear-gradient(135deg,var(--color-primary),var(--color-primary-strong))] text-base font-black text-white shadow-lg shadow-blue-200/70">
-            CC
-          </span>
-          <span className="font-display text-lg text-[var(--color-ink-900)]">
-            Codecladders LLC
-          </span>
+        <Link href="/" className="group inline-flex items-center" aria-label="Codecladders LLC home">
+          <Image
+            src="/brand/logo-horizontal.svg"
+            alt="Codecladders LLC logo"
+            width={230}
+            height={63}
+            className="h-9 w-auto sm:h-10"
+            priority
+          />
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">

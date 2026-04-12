@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 
 const quickLinks = [
@@ -15,7 +16,13 @@ export function Footer() {
     <footer className="mt-20 border-t border-[var(--color-ink-200)] bg-[var(--color-ink-950)] text-[var(--color-ink-300)]">
       <Container className="grid gap-10 py-14 md:grid-cols-3">
         <section>
-          <h3 className="font-display text-xl text-white">Codecladders LLC</h3>
+          <Image
+            src="/brand/logo-horizontal-light.svg"
+            alt="Codecladders LLC logo"
+            width={230}
+            height={63}
+            className="h-10 w-auto"
+          />
           <p className="mt-4 text-sm leading-7 text-[var(--color-ink-400)]">
             Premium IT staffing company and healthcare staffing agency delivering high-quality talent with speed, precision, and trust.
           </p>
@@ -37,7 +44,8 @@ export function Footer() {
         <section>
           <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--color-ink-200)]">Contact</h3>
           <ul className="mt-4 space-y-3 text-sm leading-6 text-[var(--color-ink-400)]">
-            <li>Email: hello@codecladders.com</li>
+            <li>Email (HR): hr@codecladders.com</li>
+            <li>Email (Admin): admin@codecladders.com</li>
             <li>Phone: +1 (555) 123-4567</li>
             <li>Office: 123 Business Ave, Suite 400, City, ST</li>
           </ul>

@@ -1,0 +1,20 @@
+<svg width="620" height="170" viewBox="0 0 620 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ccGradHorizLight" x1="22" y1="24" x2="126" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="20" width="112" height="112" rx="28" fill="#E2E8F0"/>
+  <rect x="26" y="28" width="96" height="96" rx="22" fill="url(#ccGradHorizLight)"/>
+  <g fill="#F8FAFC">
+    <rect x="50" y="44" width="8" height="64" rx="4"/>
+    <rect x="90" y="44" width="8" height="64" rx="4"/>
+    <rect x="55" y="48" width="38" height="7" rx="3.5"/>
+    <rect x="55" y="64" width="38" height="7" rx="3.5"/>
+    <rect x="55" y="80" width="38" height="7" rx="3.5"/>
+    <rect x="55" y="96" width="38" height="7" rx="3.5"/>
+  </g>
+  <text x="156" y="80" fill="#F8FAFC" font-size="56" font-family="Space Grotesk, Manrope, Arial, sans-serif" font-weight="700" letter-spacing="-0.8">Codecladders</text>
+  <text x="156" y="120" fill="#CBD5E1" font-size="30" font-family="Manrope, Arial, sans-serif" font-weight="600" letter-spacing="7">LLC</text>
+</svg>

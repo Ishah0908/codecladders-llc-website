@@ -23,7 +23,8 @@ export default function ContactUsPage() {
           <article className="card-surface p-8">
             <h2 className="font-display text-3xl text-[var(--color-ink-900)]">Get in Touch</h2>
             <ul className="mt-5 space-y-3 text-sm leading-7 text-[var(--color-ink-600)]">
-              <li>Email: hello@codecladders.com</li>
+              <li>Email (HR): hr@codecladders.com</li>
+              <li>Email (Admin): admin@codecladders.com</li>
               <li>Phone: +1 (555) 123-4567</li>
               <li>Office: 123 Business Ave, Suite 400, City, ST</li>
             </ul>
