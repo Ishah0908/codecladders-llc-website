@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-surface: #f3f7fb;
+  --color-primary: #2563eb;
+  --color-primary-strong: #1d4ed8;
+  --color-ink-950: #020617;
+  --color-ink-900: #0f172a;
+  --color-ink-800: #1e293b;
+  --color-ink-700: #334155;
+  --color-ink-600: #475569;
+  --color-ink-500: #64748b;
+  --color-ink-400: #94a3b8;
+  --color-ink-300: #cbd5e1;
+  --color-ink-200: #e2e8f0;
+  --color-ink-100: #f1f5f9;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-ink-900);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-ink-900);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.site-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.18), transparent 42%),
+    radial-gradient(circle at 96% 14%, rgba(15, 23, 42, 0.16), transparent 34%),
+    linear-gradient(180deg, #f9fbff 0%, #eff4fb 100%);
+}
+
+.hero-orb {
+  position: absolute;
+  pointer-events: none;
+  height: 16rem;
+  width: 16rem;
+  border-radius: 9999px;
+  filter: blur(56px);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.34), rgba(15, 23, 42, 0.1));
+}
+
+.hero-orb-top {
+  top: -4rem;
+  right: -2rem;
+}
+
+.hero-orb-bottom {
+  bottom: -5rem;
+  right: -4rem;
+}
+
+.card-surface {
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-ink-200);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 14px 32px -24px rgba(15, 23, 42, 0.28);
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.card-surface:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 40px -22px rgba(15, 23, 42, 0.33);
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-ink-200);
+  background: white;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.95rem;
+  color: var(--color-ink-900);
+}
+
+.input-field:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 2px;
+}
+
+.animate-fade-up {
+  animation: fadeUp 700ms ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
