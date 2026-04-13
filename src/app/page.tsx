@@ -283,38 +283,6 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section className="bg-white py-20 sm:py-28">
-        <Container>
-          <AnimateIn>
-            <p className="text-[15px] font-semibold text-[#0071e3]">Testimonials</p>
-            <h2 className="mt-2 text-[40px] font-semibold leading-tight tracking-tight text-[#1d1d1f] sm:text-[48px]">
-              Trusted by leaders.
-            </h2>
-          </AnimateIn>
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
-            <AnimateIn delay={80} direction="left" className="h-full">
-              <blockquote className="card-glass h-full p-8 text-[17px] leading-7 text-[#1d1d1f]">
-                &ldquo;CodeCladders found us high-quality engineers who fit both technical and
-                cultural requirements quickly.&rdquo;
-                <footer className="mt-5 text-[13px] font-semibold text-[#86868b]">
-                  VP of Engineering &mdash; Technology Client
-                </footer>
-              </blockquote>
-            </AnimateIn>
-            <AnimateIn delay={160} direction="right" className="h-full">
-              <blockquote className="card-glass h-full p-8 text-[17px] leading-7 text-[#1d1d1f]">
-                &ldquo;Their healthcare recruiting team was responsive, organized, and consistent in
-                candidate quality.&rdquo;
-                <footer className="mt-5 text-[13px] font-semibold text-[#86868b]">
-                  Director of Nursing &mdash; Healthcare Client
-                </footer>
-              </blockquote>
-            </AnimateIn>
-          </div>
-        </Container>
-      </section>
-
       <FinalCta />
     </>
   );

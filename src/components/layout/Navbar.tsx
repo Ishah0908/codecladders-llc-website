@@ -37,6 +37,41 @@ export function Navbar() {
           ))}
         </nav>
 
+        {/* Abstract talent-network graphic */}
+        <svg
+          className="hidden lg:block flex-shrink-0 opacity-55"
+          width="118"
+          height="32"
+          viewBox="0 0 118 32"
+          fill="none"
+          aria-hidden="true"
+        >
+          {/* Connecting lines */}
+          <line x1="14" y1="10" x2="42" y2="6" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="42" y1="6" x2="60" y2="18" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="60" y1="18" x2="86" y2="8" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="86" y1="8" x2="106" y2="16" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="14" y1="10" x2="34" y2="24" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="34" y1="24" x2="60" y2="18" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="60" y1="18" x2="78" y2="26" stroke="#d2d2d7" strokeWidth="1" />
+          <line x1="78" y1="26" x2="106" y2="16" stroke="#d2d2d7" strokeWidth="1" />
+          {/* Blue nodes (talent) */}
+          <circle cx="14" cy="10" r="3" fill="#0071e3" opacity="0.7" />
+          <circle cx="42" cy="6" r="2.5" fill="#0071e3" opacity="0.6" />
+          <circle cx="86" cy="8" r="2.5" fill="#0071e3" opacity="0.65" />
+          <circle cx="34" cy="24" r="2" fill="#0071e3" opacity="0.55" />
+          <circle cx="78" cy="26" r="2" fill="#0071e3" opacity="0.55" />
+          <circle cx="106" cy="16" r="3" fill="#0071e3" opacity="0.7" />
+          {/* Gold accent node (the match / connection) */}
+          <circle
+            cx="60"
+            cy="18"
+            r="3.5"
+            fill="#c8a14a"
+            style={{ animation: "node-pulse 3s ease-in-out infinite" }}
+          />
+        </svg>
+
         <div className="flex items-center gap-3">
           <Link
             href="/contact-us"
