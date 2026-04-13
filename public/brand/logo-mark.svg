@@ -1,18 +1,18 @@
 <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="ccGrad" x1="24" y1="24" x2="136" y2="136" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#3B82F6"/>
-      <stop offset="1" stop-color="#1D4ED8"/>
+    <linearGradient id="ink" x1="20" y1="16" x2="140" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1222"/>
+      <stop offset="1" stop-color="#151E33"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="40" y1="34" x2="126" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6E7B8"/>
+      <stop offset="0.55" stop-color="#E5C978"/>
+      <stop offset="1" stop-color="#C8A14A"/>
     </linearGradient>
   </defs>
-  <rect x="14" y="14" width="132" height="132" rx="32" fill="#0F172A"/>
-  <rect x="24" y="24" width="112" height="112" rx="26" fill="url(#ccGrad)"/>
-  <g fill="#F8FAFC">
-    <rect x="52" y="44" width="10" height="72" rx="5"/>
-    <rect x="98" y="44" width="10" height="72" rx="5"/>
-    <rect x="58" y="48" width="42" height="8" rx="4"/>
-    <rect x="58" y="66" width="42" height="8" rx="4"/>
-    <rect x="58" y="84" width="42" height="8" rx="4"/>
-    <rect x="58" y="102" width="42" height="8" rx="4"/>
-  </g>
+  <rect x="12" y="12" width="136" height="136" rx="34" fill="url(#ink)"/>
+  <rect x="24" y="24" width="112" height="112" rx="26" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M60 54L42 80L60 106" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100 54L118 80L100 106" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 52L72 108" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
 </svg>
