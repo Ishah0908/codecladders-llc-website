@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
-import { ButtonLink } from "@/components/ui/ButtonLink";
+import { ResumeForm } from "@/components/forms/ResumeForm";
 import { InfoGrid } from "@/components/sections/InfoGrid";
 import { PageHero } from "@/components/sections/PageHero";
+import { FinalCta } from "@/components/sections/FinalCta";
 
 export const metadata: Metadata = {
-  title: "Candidates | Codecladders LLC",
+  title: "Candidates | CodeCladders LLC",
   description:
-    "Work with Codecladders LLC to access top IT and healthcare opportunities with guidance from specialized recruiters.",
+    "Work with CodeCladders LLC to access top IT and healthcare opportunities with guidance from specialized recruiters.",
 };
 
 const candidateSupport = [
@@ -17,11 +18,11 @@ const candidateSupport = [
   },
   {
     title: "Interview Preparation",
-    text: "Practical prep and communication support to help you stand out confidently.",
+    text: "Practical prep and communication support to help you stand out and succeed confidently.",
   },
   {
     title: "Offer Guidance",
-    text: "Clarity around compensation, benefits, and role expectations before decisions.",
+    text: "Clarity around compensation, benefits, and role expectations before any decision.",
   },
 ];
 
@@ -30,29 +31,37 @@ export default function CandidatesPage() {
     <>
       <PageHero
         eyebrow="For Candidates"
-        title="Find Roles Where Your Talent Matters"
-        description="Whether you are in tech or healthcare, Codecladders connects you to high-quality opportunities and supports you throughout the hiring journey."
+        title="Find roles where your talent matters."
+        description="Whether you are in tech or healthcare, CodeCladders connects you to high-quality opportunities and supports you throughout the entire hiring journey."
       />
 
-      <section className="pb-16 sm:pb-20">
+      <section className="bg-[#f5f5f7] py-20 sm:py-28">
         <Container>
-          <h2 className="font-display text-3xl text-[var(--color-ink-900)]">How We Support Candidates</h2>
+          <p className="text-[15px] font-semibold text-[#0071e3]">Candidate Support</p>
+          <h2 className="mt-2 text-[40px] font-semibold leading-tight tracking-tight text-[#1d1d1f] sm:text-[48px]">
+            How we support you.
+          </h2>
           <InfoGrid items={candidateSupport} />
+        </Container>
+      </section>
 
-          <div className="card-surface mt-10 p-8">
-            <h2 className="font-display text-3xl text-[var(--color-ink-900)]">Resume Submission Placeholder</h2>
-            <p className="mt-3 text-sm leading-7 text-[var(--color-ink-600)]">
-              Upload and submission integration can be connected here (ATS, email automation, or secure document portal).
+      <section className="bg-white py-20 sm:py-28">
+        <Container>
+          <div className="mx-auto max-w-2xl">
+            <p className="text-[15px] font-semibold text-[#0071e3]">Apply Now</p>
+            <h2 className="mt-2 text-[36px] font-semibold leading-tight tracking-tight text-[#1d1d1f]">
+              Submit your resume.
+            </h2>
+            <p className="mt-3 mb-8 text-[17px] leading-7 text-[#6e6e73]">
+              Attach your resume and a recruiter will reach out about relevant IT or healthcare openings.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <ButtonLink href="/contact-us">Submit Resume</ButtonLink>
-              <ButtonLink href="/it-staffing" variant="secondary">
-                Explore IT Roles
-              </ButtonLink>
-            </div>
+            <ResumeForm />
           </div>
         </Container>
       </section>
+
+      <FinalCta />
     </>
   );
 }
+

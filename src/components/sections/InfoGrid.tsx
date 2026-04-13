@@ -9,17 +9,18 @@ type InfoGridProps = {
 
 export function InfoGrid({ items }: InfoGridProps) {
   return (
-    <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {items.map((item, index) => (
         <article
           key={item.title}
-          className="card-surface animate-fade-up p-6"
-          style={{ animationDelay: `${index * 80}ms` }}
+          className="card rounded-[18px] bg-[#f5f5f7] p-7 animate-fade-up"
+          style={{ animationDelay: `${index * 60}ms` }}
         >
-          <h3 className="font-display text-xl text-[var(--color-ink-900)]">{item.title}</h3>
-          <p className="mt-3 text-sm leading-7 text-[var(--color-ink-600)]">{item.text}</p>
+          <h3 className="text-[21px] font-semibold text-[#1d1d1f]">{item.title}</h3>
+          <p className="mt-3 text-[15px] leading-6 text-[#6e6e73]">{item.text}</p>
         </article>
       ))}
     </div>
   );
 }
+

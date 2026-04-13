@@ -10,24 +10,24 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, description, actions }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden py-16 sm:py-20">
-      <div className="hero-orb hero-orb-top" aria-hidden />
+    <section className="bg-white pt-16 pb-12 sm:pt-24 sm:pb-16">
       <Container>
-        <div className="max-w-4xl animate-fade-up">
+        <div className="mx-auto max-w-3xl text-center animate-fade-up">
           {eyebrow ? (
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-primary)]">
-              {eyebrow}
-            </p>
+            <p className="mb-4 text-[15px] font-semibold text-[#0071e3]">{eyebrow}</p>
           ) : null}
-          <h1 className="font-display text-4xl leading-tight text-[var(--color-ink-900)] sm:text-5xl lg:text-6xl">
+          <h1 className="text-[48px] font-semibold leading-tight tracking-tight text-[#1d1d1f] sm:text-[64px]">
             {title}
           </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--color-ink-600)]">
+          <p className="mx-auto mt-5 max-w-2xl text-[19px] leading-7 text-[#6e6e73]">
             {description}
           </p>
-          {actions ? <div className="mt-8 flex flex-wrap gap-4">{actions}</div> : null}
+          {actions ? (
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">{actions}</div>
+          ) : null}
         </div>
       </Container>
     </section>
   );
 }
+

@@ -1,27 +1,23 @@
 import type { Metadata } from "next";
-import { Manrope, Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.codecladders.com"),
   title: {
-    default: "Codecladders LLC | IT and Healthcare Staffing",
-    template: "%s | Codecladders LLC",
+    default: "CodeCladders LLC | IT and Healthcare Staffing",
+    template: "%s | CodeCladders LLC",
   },
   description:
-    "Codecladders LLC is a premium IT staffing company and healthcare staffing agency connecting employers with top-tier technical and clinical talent.",
+    "CodeCladders LLC is a premium IT staffing company and healthcare staffing agency connecting employers with top-tier technical and clinical talent.",
   keywords: [
     "IT staffing company",
     "tech recruitment firm",
@@ -36,9 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}>
-      <body className="min-h-full bg-[var(--color-surface)] text-[var(--color-ink-900)]">
-        <div className="site-background" aria-hidden />
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full bg-white text-[#1d1d1f]">
         <div className="relative flex min-h-full flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>

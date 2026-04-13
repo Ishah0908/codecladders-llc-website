@@ -11,11 +11,11 @@ type ButtonLinkProps = LinkProps & {
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "bg-[var(--color-primary)] text-white hover:-translate-y-0.5 hover:shadow-xl hover:bg-[var(--color-primary-strong)]",
+    "bg-[#0071e3] text-white hover:bg-[#0077ed] active:scale-[0.98]",
   secondary:
-    "bg-white text-[var(--color-ink-900)] border border-[var(--color-ink-200)] hover:-translate-y-0.5 hover:shadow-lg",
+    "bg-transparent text-[#0071e3] border border-[#0071e3] hover:bg-[#0071e3] hover:text-white active:scale-[0.98]",
   ghost:
-    "text-[var(--color-ink-900)] hover:bg-[var(--color-ink-100)]",
+    "bg-transparent text-[#1d1d1f] hover:bg-[#f5f5f7] active:scale-[0.98]",
 };
 
 export function ButtonLink({
@@ -27,9 +27,10 @@ export function ButtonLink({
   return (
     <Link
       {...props}
-      className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 ${variantClasses[variant]} ${className}`}
+      className={`inline-flex items-center justify-center rounded-full px-[22px] py-[10px] text-[17px] font-normal tracking-normal transition-all duration-200 ${variantClasses[variant]} ${className}`}
     >
       {children}
     </Link>
   );
 }
+

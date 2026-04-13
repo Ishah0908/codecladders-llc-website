@@ -3,22 +3,19 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export function FinalCta() {
   return (
-    <section className="py-18 sm:py-24">
+    <section className="bg-[#f5f5f7] py-20 sm:py-28">
       <Container>
-        <div className="relative overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#0f172a,#1d4ed8,#2563eb)] px-8 py-12 text-white shadow-2xl shadow-blue-200 sm:px-12 sm:py-14">
-          <div className="hero-orb hero-orb-bottom opacity-30" aria-hidden />
-          <h2 className="font-display text-3xl leading-tight sm:text-4xl">
-            Build Teams That Outperform Expectations
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-[40px] font-semibold leading-tight tracking-tight text-[#1d1d1f] sm:text-[52px]">
+            Ready to build your next great team?
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-blue-100">
-            Partner with a trusted tech recruitment firm and nurse recruitment company that understands speed, quality, and long-term fit.
+          <p className="mx-auto mt-5 max-w-xl text-[19px] leading-7 text-[#6e6e73]">
+            Partner with a staffing firm that prioritizes quality, speed, and long-term fit in every placement.
           </p>
-          <div className="mt-7 flex flex-wrap gap-4">
-            <ButtonLink href="/employers" variant="secondary" className="border-0">
-              Hire Talent
-            </ButtonLink>
-            <ButtonLink href="/candidates" className="bg-white/15 hover:bg-white/25">
-              Find Talent
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <ButtonLink href="/employers">Hire Talent</ButtonLink>
+            <ButtonLink href="/candidates" variant="secondary">
+              Find Opportunities
             </ButtonLink>
           </div>
         </div>
@@ -26,3 +23,4 @@ export function FinalCta() {
     </section>
   );
 }
+

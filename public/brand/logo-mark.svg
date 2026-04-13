@@ -1,18 +1,19 @@
-<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="26" fill="#0B1222"/>
+  <!-- Ladder rails -->
+  <rect x="22" y="24" width="10" height="72" rx="5" fill="url(#g)"/>
+  <rect x="88" y="24" width="10" height="72" rx="5" fill="url(#g)"/>
+  <!-- Rungs -->
+  <rect x="32" y="28" width="56" height="9" rx="4.5" fill="url(#g)"/>
+  <rect x="32" y="55.5" width="56" height="9" rx="4.5" fill="url(#g)"/>
+  <rect x="32" y="83" width="56" height="9" rx="4.5" fill="url(#g)"/>
+  <!-- Code bracket overlay -->
+  <path d="M47 41 L34 60 L47 79" stroke="#0B1222" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M73 41 L86 60 L73 79" stroke="#0B1222" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
   <defs>
-    <linearGradient id="ink" x1="20" y1="16" x2="140" y2="144" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1222"/>
-      <stop offset="1" stop-color="#151E33"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="40" y1="34" x2="126" y2="122" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F6E7B8"/>
-      <stop offset="0.55" stop-color="#E5C978"/>
-      <stop offset="1" stop-color="#C8A14A"/>
+    <linearGradient id="g" x1="22" y1="24" x2="98" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F6E7B8"/>
+      <stop offset="100%" stop-color="#C8A14A"/>
     </linearGradient>
   </defs>
-  <rect x="12" y="12" width="136" height="136" rx="34" fill="url(#ink)"/>
-  <rect x="24" y="24" width="112" height="112" rx="26" stroke="url(#gold)" stroke-width="3"/>
-  <path d="M60 54L42 80L60 106" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M100 54L118 80L100 106" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M84 52L72 108" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
 </svg>
