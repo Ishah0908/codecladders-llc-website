@@ -185,3 +185,69 @@ body {
 .tag-pill:hover {
   background: #eaeaec;
 }
+
+/* ============ SCROLL REVEAL ============ */
+/* Apple-style: fade + translate + blur, resolved with spring easing */
+
+.will-animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(7px);
+  transition:
+    opacity 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.88s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.will-animate-left {
+  opacity: 0;
+  transform: translateX(-44px);
+  filter: blur(6px);
+  transition:
+    opacity 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.88s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.will-animate-right {
+  opacity: 0;
+  transform: translateX(44px);
+  filter: blur(6px);
+  transition:
+    opacity 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.88s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.will-animate-scale {
+  opacity: 0;
+  transform: scale(0.94) translateY(20px);
+  filter: blur(5px);
+  transition:
+    opacity 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.88s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Resolved state */
+.will-animate-up.is-visible,
+.will-animate-left.is-visible,
+.will-animate-right.is-visible,
+.will-animate-scale.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .will-animate-up,
+  .will-animate-left,
+  .will-animate-right,
+  .will-animate-scale {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}

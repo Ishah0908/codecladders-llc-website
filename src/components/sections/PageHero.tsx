@@ -10,8 +10,20 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, description, actions }: PageHeroProps) {
   return (
-    <section className="bg-white pt-16 pb-12 sm:pt-24 sm:pb-16">
-      <Container>
+    <section className="relative overflow-hidden pb-12 pt-16 sm:pb-16 sm:pt-24">
+      {/* ambient background */}
+      <div className="pointer-events-none absolute inset-0 mesh-bg" aria-hidden />
+      {/* floating orbs */}
+      <div
+        className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[420px] rounded-full bg-[#0071e3]/11 blur-[84px] animate-float"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -right-16 top-4 h-[340px] w-[340px] rounded-full bg-[#c8a14a]/13 blur-[74px] animate-float"
+        style={{ animationDelay: "2000ms" }}
+        aria-hidden
+      />
+      <Container className="relative">
         <div className="mx-auto max-w-3xl text-center animate-fade-up">
           {eyebrow ? (
             <p className="mb-4 text-[15px] font-semibold text-[#0071e3]">{eyebrow}</p>
