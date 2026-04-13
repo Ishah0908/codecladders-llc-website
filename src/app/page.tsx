@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pb-16 pt-20 sm:pb-24 sm:pt-28">
+      <section className="hero-graphic mesh-bg pb-16 pt-20 sm:pb-24 sm:pt-28">
         <Container>
           <div className="mx-auto max-w-4xl text-center animate-fade-up">
             <p className="mb-5 inline-flex items-center rounded-full bg-[#f5f5f7] px-4 py-1.5 text-[15px] font-medium text-[#6e6e73]">
@@ -90,15 +90,20 @@ export default function Home() {
               </ButtonLink>
             </div>
           </div>
+          <div className="pointer-events-none relative mx-auto mt-12 hidden h-28 max-w-3xl items-center justify-center sm:flex">
+            <div className="animate-float absolute left-6 h-16 w-16 rounded-full bg-[#0071e3]/18 blur-[2px]" />
+            <div className="animate-float absolute right-8 h-14 w-14 rounded-full bg-[#c8a14a]/24 blur-[1px]" style={{ animationDelay: "1400ms" }} />
+            <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#d2d2d7] to-transparent" />
+          </div>
         </Container>
       </section>
 
       {/* Stats */}
       <section className="bg-[#f5f5f7] py-12">
         <Container>
-          <div className="grid grid-cols-2 gap-px bg-[#d2d2d7] rounded-2xl overflow-hidden sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {stats.map((stat) => (
-              <div key={stat.value} className="bg-[#f5f5f7] px-8 py-8 text-center">
+              <div key={stat.value} className="card-glass px-8 py-8 text-center">
                 <p className="text-[36px] font-semibold text-[#1d1d1f]">{stat.value}</p>
                 <p className="mt-1 text-[15px] text-[#6e6e73]">{stat.label}</p>
               </div>
@@ -118,7 +123,7 @@ export default function Home() {
             {services.map((service, index) => (
               <article
                 key={service.title}
-                className="rounded-[22px] bg-[#f5f5f7] p-8 animate-fade-up"
+                className="card-glass p-8 animate-fade-up"
                 style={{ animationDelay: `${index * 60}ms` }}
               >
                 <h3 className="text-[21px] font-semibold text-[#1d1d1f]">{service.title}</h3>
@@ -153,7 +158,7 @@ export default function Home() {
               {reasons.map((reason) => (
                 <li
                   key={reason}
-                  className="flex items-start gap-3 rounded-[16px] bg-white px-6 py-4 text-[15px] text-[#1d1d1f]"
+                  className="flex items-start gap-3 rounded-[16px] bg-white/92 px-6 py-4 text-[15px] text-[#1d1d1f] shadow-[0_10px_22px_rgba(29,29,31,0.06)]"
                 >
                   <svg className="mt-0.5 flex-shrink-0 text-[#0071e3]" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden>
                     <circle cx="9" cy="9" r="9" fill="#0071e3" />
@@ -180,7 +185,7 @@ export default function Home() {
             {process.map((item, index) => (
               <article
                 key={item.title}
-                className="rounded-[22px] bg-[#f5f5f7] p-8 animate-fade-up"
+                className="card-glass p-8 animate-fade-up"
                 style={{ animationDelay: `${index * 60}ms` }}
               >
                 <p className="text-[13px] font-semibold tracking-widest text-[#0071e3]">{item.step}</p>
@@ -215,13 +220,13 @@ export default function Home() {
             Trusted by leaders.
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
-            <blockquote className="rounded-[22px] bg-[#f5f5f7] p-8 text-[17px] leading-7 text-[#1d1d1f]">
+            <blockquote className="card-glass p-8 text-[17px] leading-7 text-[#1d1d1f]">
               &ldquo;CodeCladders found us high-quality engineers who fit both technical and cultural requirements quickly.&rdquo;
               <footer className="mt-5 text-[13px] font-semibold text-[#86868b]">
                 VP of Engineering &mdash; Technology Client
               </footer>
             </blockquote>
-            <blockquote className="rounded-[22px] bg-[#f5f5f7] p-8 text-[17px] leading-7 text-[#1d1d1f]">
+            <blockquote className="card-glass p-8 text-[17px] leading-7 text-[#1d1d1f]">
               &ldquo;Their healthcare recruiting team was responsive, organized, and consistent in candidate quality.&rdquo;
               <footer className="mt-5 text-[13px] font-semibold text-[#86868b]">
                 Director of Nursing &mdash; Healthcare Client

@@ -1,16 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" fill="none">
-  <rect y="18" width="60" height="60" rx="13" fill="#ffffff" fill-opacity="0.15"/>
-  <rect x="11" y="26" width="5" height="36" rx="2.5" fill="url(#gl)"/>
-  <rect x="44" y="26" width="5" height="36" rx="2.5" fill="url(#gl)"/>
-  <rect x="16" y="28" width="28" height="4.5" rx="2.25" fill="url(#gl)"/>
-  <rect x="16" y="42" width="28" height="4.5" rx="2.25" fill="url(#gl)"/>
-  <rect x="16" y="56" width="28" height="4.5" rx="2.25" fill="url(#gl)"/>
+  <rect y="18" width="60" height="60" rx="13" fill="#ffffff" fill-opacity="0.14" />
+  <rect x="1" y="19" width="58" height="58" rx="12" stroke="rgba(255,255,255,0.28)" />
+  <circle cx="30" cy="48" r="21" fill="url(#markHalo)" opacity="0.36" />
+
+  <rect x="11" y="26" width="5" height="36" rx="2.5" fill="url(#gold)" />
+  <rect x="44" y="26" width="5" height="36" rx="2.5" fill="url(#gold)" />
+  <rect x="16" y="28" width="28" height="4.5" rx="2.25" fill="url(#gold)" />
+  <rect x="16" y="42" width="28" height="4.5" rx="2.25" fill="url(#gold)" />
+  <rect x="16" y="56" width="28" height="4.5" rx="2.25" fill="url(#gold)" />
+
   <text x="75" y="58" font-family="-apple-system,Helvetica Neue,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-0.5" fill="#ffffff">CodeCladders</text>
-  <text x="76" y="76" font-family="-apple-system,Helvetica Neue,Arial,sans-serif" font-size="11" font-weight="500" letter-spacing="3" fill="#E5C978">LLC</text>
+  <text x="76" y="76" font-family="-apple-system,Helvetica Neue,Arial,sans-serif" font-size="11" font-weight="500" letter-spacing="3" fill="#E7C56E">LLC</text>
+
   <defs>
-    <linearGradient id="gl" x1="0" y1="18" x2="60" y2="78" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F6E7B8"/>
-      <stop offset="100%" stop-color="#C8A14A"/>
+    <radialGradient id="markHalo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(31 46) rotate(108) scale(25)">
+      <stop stop-color="#F6E7B8" />
+      <stop offset="1" stop-color="#F6E7B8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="18" x2="60" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F9EEC8" />
+      <stop offset="0.55" stop-color="#E3C16E" />
+      <stop offset="1" stop-color="#B8892E" />
     </linearGradient>
   </defs>
 </svg>
