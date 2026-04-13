@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
       }
 
       await resend.emails.send({
-        from: "CodeCladders Website <noreply@codecladders.com>",
+        from: "CodeCladders Website <info@codecladders.com>",
         to: ["hr@codecladders.com"],
         replyTo: email,
         subject: `Resume Submission — ${name}${role ? ` (${role})` : ""}`,
