@@ -46,8 +46,8 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm leading-6 text-[var(--color-ink-400)]">
             <li>Email (HR): hr@codecladders.com</li>
             <li>Email (Admin): admin@codecladders.com</li>
-            <li>Phone: +1 (555) 123-4567</li>
-            <li>Office: 123 Business Ave, Suite 400, City, ST</li>
+            <li>Phone: +1 (571) 474-9522</li>
+            <li>Office: 14500 Dallas Parkway, Dallas, TX 75254</li>
           </ul>
         </section>
       </Container>

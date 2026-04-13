@@ -25,8 +25,8 @@ export default function ContactUsPage() {
             <ul className="mt-5 space-y-3 text-sm leading-7 text-[var(--color-ink-600)]">
               <li>Email (HR): hr@codecladders.com</li>
               <li>Email (Admin): admin@codecladders.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
-              <li>Office: 123 Business Ave, Suite 400, City, ST</li>
+              <li>Phone: +1 (571) 474-9522</li>
+              <li>Office: 14500 Dallas Parkway, Dallas, TX 75254</li>
             </ul>
             <p className="mt-6 text-sm font-medium text-[var(--color-ink-700)]">
               Ready to hire or ready for your next role? Reach out and our team will respond quickly.
