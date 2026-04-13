@@ -2,6 +2,7 @@
   <rect width="120" height="120" rx="26" fill="url(#bg)" />
   <rect x="3" y="3" width="114" height="114" rx="23" stroke="rgba(255,255,255,0.18)" />
   <circle cx="60" cy="60" r="45" fill="url(#halo)" opacity="0.32" />
+  <ellipse cx="52" cy="34" rx="28" ry="12" fill="url(#shine)" opacity="0.42" />
 
   <rect x="22" y="24" width="10" height="72" rx="5" fill="url(#gold)" />
   <rect x="88" y="24" width="10" height="72" rx="5" fill="url(#gold)" />
@@ -26,6 +27,10 @@
       <stop offset="0" stop-color="#F9EEC8" />
       <stop offset="0.55" stop-color="#E3C16E" />
       <stop offset="1" stop-color="#B8892E" />
+    </linearGradient>
+    <linearGradient id="shine" x1="24" y1="28" x2="82" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.7" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
     </linearGradient>
   </defs>
 </svg>

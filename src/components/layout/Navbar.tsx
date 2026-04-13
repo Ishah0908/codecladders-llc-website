@@ -13,14 +13,14 @@ const navItems = [
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/[0.08] bg-white/90 backdrop-blur-xl backdrop-saturate-150">
-      <Container className="flex h-14 items-center justify-between gap-6">
+      <Container className="flex h-16 items-center justify-between gap-6">
         <Link href="/" aria-label="CodeCladders LLC home" className="flex-shrink-0">
           <Image
             src="/brand/logo-horizontal.svg"
             alt="CodeCladders LLC"
-            width={220}
-            height={40}
-            className="h-8 w-auto"
+            width={248}
+            height={46}
+            className="h-10 w-auto drop-shadow-[0_6px_14px_rgba(11,18,34,0.22)] transition-transform duration-300 hover:scale-[1.02]"
             priority
           />
         </Link>

@@ -24,9 +24,9 @@ export function Footer() {
             <Image
               src="/brand/logo-horizontal-light.svg"
               alt="CodeCladders LLC"
-              width={180}
-              height={48}
-              className="h-8 w-auto"
+              width={210}
+              height={52}
+              className="h-9 w-auto drop-shadow-[0_8px_18px_rgba(0,0,0,0.38)]"
             />
             <p className="mt-4 text-[13px] leading-6 text-[#6e6e73]">
               Premium IT staffing and healthcare recruiting. Connecting top talent with leading organizations.
